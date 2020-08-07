@@ -1,0 +1,103 @@
+
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+h1 {
+    margin: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Helvetica;
+  }
+  
+  p {
+    border: 4px solid black;
+    background-color: gray;
+    width: 90%;
+    height: 150px;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: Helvetica;
+
+    background-color: gray;
+    padding: 10px;
+    padding-top: 40px;
+    border: 3px solid black;
+    width: auto;
+  }
+
+  
+  /* Simple Responsive Framework. */
+  .row {
+    width: 100%;
+  }
+
+
+
+  p span {
+    border: 3px solid black;
+    float: right;
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: absolute;
+    font-size: 125%;
+    font-weight: bold;
+
+    right: -3px;
+    top: -3px;
+}
+
+div.row div:nth-child(1) span {
+    background-color: #B05F5F;
+}
+
+div.row div:nth-child(2) span {
+    color: white;
+    background-color: #AA2222;
+}
+div.row div:nth-child(3) span {
+    background-color: #DEB887;
+}
+
+  
+  /********** Large devices only **********/
+  @media (min-width: 992px) {
+    .col-lg-3 {
+      float: left;
+      width: 33.33%;
+    }
+
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2 {
+      float: left;
+    }
+    .col-md-1 {
+      width: 100%;
+    }
+    
+    .col-md-2 {
+      width: 50%;
+    }
+
+    .row div:nth-child(3) {
+        width: 100%;
+        clear: left;
+    }
+  }
+
+  /********** Small devices only **********/
+  @media (max-width: 767px) {
+    .col-s-1 {
+        width: 100%;
+      }
+  }
